@@ -9,5 +9,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
   $users = fopen("userdata.csv", "r");
   $data = fgetcsv($users);
   print_r($data);
+  fclose($users);
   
 }
